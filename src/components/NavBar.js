@@ -124,6 +124,8 @@ const NavBar = () => {
               mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
             }
           </button>
+          <p className='text-center text-light/75 dark:text-dark/90 mt-3'>Click on the {mode === "dark" ? "Moon to turn" : "Sun to turn"}</p>
+          <div className='text-center text-light/75 dark:text-dark/90'>{mode === "dark" ? "on the light!" : "off the light!"}</div>
         </nav>
       </motion.div> 
         : null
