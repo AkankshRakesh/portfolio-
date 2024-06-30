@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import pic from "../../public/images/profile/4.jpeg";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/transitionEffect";
@@ -25,13 +25,15 @@ const AnimatedNumbers = ({ value }) => {
       { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current; // Store ref.current in a variable
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) { // Use the stored variable
+        observer.unobserve(currentRef);
       }
     };
   }, [value, motionValue]);
@@ -66,7 +68,7 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                - Hi, I'm Akanksh Rakesh, an aspiring web developer and UI/UX designer with a
+                - Hi, I&apos;m Akanksh Rakesh, an aspiring web developer and UI/UX designer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences. With a solution-centered mind and optimistic attitude, I
                 am always looking for new and innovative ways to bring my
@@ -74,11 +76,11 @@ const about = () => {
               </p>
               <p className="my-4 font-medium">
                 - I believe that design is about more than just making things
-                look pretty, it's about solving problems and creating
+                look pretty, it&apos;s about solving problems and creating
                 intuitive, enjoyable experiences for users.
               </p>
               <p className="font-medium">
-                - Whether I'm working on a website, mobile app, or other digital
+                - Whether I&apos;m working on a website, mobile app, or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. With growing expertise in
                 DSA, I am evolving everyday to be better version of myself than yesterday.
