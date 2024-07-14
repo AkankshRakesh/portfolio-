@@ -10,7 +10,6 @@ import Image from "next/image";
 import pic1 from "../../public/images/projects/careerhunt.jpg";
 import pic2 from "../../public/images/projects/pawcare.jpg";
 import pic3 from "../../public/images/projects/calculator.jpg";
-import pic4 from "../../public/images/projects/eventopia.jpg";
 import TransitionEffect from "@/components/transitionEffect";
 
 const FramerImage = motion(Image);
@@ -160,7 +159,7 @@ const Projects = () => {
           <div
             className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0
                     md:gap-x-8 sm:gap-y-24 xs:gap-x-0 xs:gap-y-24"
-          />
+          >
             <div className="col-span-12">
               <FeaturedProject
                 title="Job career search app"
@@ -179,6 +178,7 @@ const Projects = () => {
                 github="https://github.com/AkankshRakesh/CareerHunt"
                 type="MERN stack based app"
               />
+            </div>
             <div className="col-span-6 sm:col-span-12 xs:col-span-12">
               <Project
                 title="Pawcare"
