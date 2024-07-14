@@ -10,6 +10,7 @@ import Image from "next/image";
 import pic1 from "../../public/images/projects/careerhunt.jpg";
 import pic2 from "../../public/images/projects/pawcare.jpg";
 import pic3 from "../../public/images/projects/calculator.jpg";
+import pic4 from "../../public/images/projects/eventopia.jpg";
 import TransitionEffect from "@/components/transitionEffect";
 
 const FramerImage = motion(Image);
