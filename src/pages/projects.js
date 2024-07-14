@@ -163,7 +163,7 @@ const Projects = () => {
           >
             <div className="col-span-12">
               <FeaturedProject
-                title="Job career search app"
+                title="Event Hosting and Finding"
                 img={pic4}
                 summary="An app to connect those who want to host events and those who want to gain more knowledge."
                 link="https://eventopia-olive.vercel.app/"
