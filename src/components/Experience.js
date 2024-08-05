@@ -47,11 +47,6 @@ const Experience = () => {
             time = "Summer 2024"
             place = "UniNxt Study Overseas"
             info = "Worked on a team responsible for developing and maintaining the official company website. In addition to that, led a team for developing a new website for the company." />
-            <Details 
-            type = "Freelancer Web Developer"
-            time = "2024-now"
-            place = "Multiple places"
-            info = "Delivered responsive and interactive websites to clients from multiple companies." />
         </ul>
       
       </div>

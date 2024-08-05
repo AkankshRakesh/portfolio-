@@ -11,6 +11,7 @@ import pic1 from "../../public/images/projects/careerhunt.jpg";
 import pic2 from "../../public/images/projects/pawcare.jpg";
 import pic3 from "../../public/images/projects/calculator.jpg";
 import pic4 from "../../public/images/projects/eventopia.jpg";
+import pic5 from "../../public/images/projects/finanseer.png";
 import TransitionEffect from "@/components/transitionEffect";
 
 const FramerImage = motion(Image);
@@ -169,6 +170,15 @@ const Projects = () => {
                 link="https://eventopia-olive.vercel.app/"
                 github="https://github.com/AkankshRakesh/Eventopia"
                 type="MERN built on Typescript and tailwind"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12 xs:col-span-12">
+              <Project
+                title="Finance Dashboard"
+                img={pic5}
+                link="https://finanseer-ruddy.vercel.app/"
+                github="https://github.com/AkankshRakesh/Finanseer-frontend"
+                type="MERN app with predictions and analytics using ML"
               />
             </div>
             <div className="col-span-6 sm:col-span-12 xs:col-span-12">
