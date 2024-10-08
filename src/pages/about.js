@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import pic from "../../public/images/profile/4.jpeg";
+import pic from "../../public/images/profile/img.png";
 import { useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
