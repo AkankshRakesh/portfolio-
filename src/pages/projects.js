@@ -12,11 +12,14 @@ import pic2 from "../../public/images/projects/pawcare.jpg";
 import pic3 from "../../public/images/projects/calculator.jpg";
 import pic4 from "../../public/images/projects/eventopia.jpg";
 import pic5 from "../../public/images/projects/finanseer.png";
+import pic6 from "../../public/images/projects/kyr2.png"
 import TransitionEffect from "@/components/transitionEffect";
+import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+  const [theme] = useThemeSwitcher();
   return (
     <article
       className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border 
@@ -164,12 +167,21 @@ const Projects = () => {
           >
             <div className="col-span-12">
               <FeaturedProject
-                title="Event Hosting and Finding"
+                title="Knowing Your Rights"
+                img={pic6}
+                summary="An app to increase and spread constitutional literacy to all ages"
+                link="https://kyr-frontend.vercel.app/"
+                github="https://github.com/AkankshRakesh/KYR1"
+                type="MERN app built on Typescript SWC and TailwindCSS"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12 xs:col-span-12">
+              <Project
+                title="Eventopia"
                 img={pic4}
-                summary="An app to connect those who want to host events and those who want to gain more knowledge."
                 link="https://eventopia-olive.vercel.app/"
                 github="https://github.com/AkankshRakesh/Eventopia"
-                type="MERN built on Typescript and tailwind"
+                type="MERN app built on Typescript and tailwind"
               />
             </div>
             <div className="col-span-6 sm:col-span-12 xs:col-span-12">
